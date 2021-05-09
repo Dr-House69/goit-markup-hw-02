@@ -1,3 +1,53 @@
-selector {
-  color: #ff0000;
+/* Контакты */
+.list {
+  list-style: none;
 }
+.link {
+  text-decoration: none;
+}
+.menu-link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: #2196f3;
+}
+.mail-link,
+.phone-link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.mail-link:hover,
+.mail-link:focus {
+  color: #2196f3;
+}
+.phone-link:hover,
+.phone-link:focus {
+  color: #2196f3;
+}
+.modal-btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
+  cursor: pointer;
+}
+.modal-btn :hover,
+.modal-btn :focus {
+  color: #ffffff;
+  background-color: #188ce8;
+}
+
+font-family: "Raleway", sans-serif;
