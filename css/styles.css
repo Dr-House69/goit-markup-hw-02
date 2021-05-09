@@ -1,12 +1,17 @@
-/* Контакты */
+:root {
+  --accent-color: #2196f3;
+}
 .list {
   list-style: none;
 }
 .link {
   text-decoration: none;
 }
-.menu-link {
+body {
   font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+}
+.menu-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -15,7 +20,10 @@
 }
 .menu-link:hover,
 .menu-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
+}
+.menu-list .link.current {
+  color: var(--accent-color);
 }
 .mail-link,
 .phone-link {
@@ -34,6 +42,19 @@
 .phone-link:focus {
   color: #2196f3;
 }
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
 .modal-btn {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -44,10 +65,57 @@
   background-color: #2196f3;
   cursor: pointer;
 }
-.modal-btn :hover,
-.modal-btn :focus {
+.modal-btn:hover,
+.modal-btn:focus {
   color: #ffffff;
   background-color: #188ce8;
 }
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+.address-link {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.address-mail-link,
+.address-phone-link {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff99;
+}
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent-color);
+}
 
-font-family: "Raleway", sans-serif;
+.address-mail-link:hover,
+.address-mail-link:focus {
+  color: #2196f3;
+}
+.address-phone-link:hover,
+.address-phone-link:focus {
+  color: var(--accent-color);
+}
+.accent-black {
+  color: #212121;
+}
+.accent-white {
+  color: #ffffff;
+}
+footer {
+  background-color: #2f303a;
+}
