@@ -1,4 +1,7 @@
 :root {
+  --main-font: "Roboto", sans-serif;
+  --main-text-color: #212121;
+  --second-text-color: #757575;
   --accent-color: #2196f3;
 }
 .list {
@@ -8,15 +11,18 @@
   text-decoration: none;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--main-font);
   background-color: #ffffff;
+  letter-spacing: 0.03em;
+  color: #ffffff;
 }
+/* ==NAVIGATION== */
 .menu-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--main-text-color);
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -27,42 +33,39 @@ body {
 }
 .mail-link,
 .phone-link {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--second-text-color);
 }
 .mail-link:hover,
 .mail-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .phone-link:hover,
 .phone-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
+/* ==HERO== */
 .hero {
   background-color: #2f303a;
 }
 .hero-title {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
 }
 .modal-btn {
-  font-family: "Roboto", sans-serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: #ffffff;
-  background-color: #2196f3;
+  background-color: var(--accent-color);
   cursor: pointer;
 }
 .modal-btn:hover,
@@ -70,31 +73,87 @@ body {
   color: #ffffff;
   background-color: #188ce8;
 }
+/* ==FEATURES== */
+.feature-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+}
+.feature-description {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--second-text-color);
+}
+/* ==TEAM== */
+.team {
+  background-color: #f5f4fa;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--main-text-color);
+}
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--main-text-color);
+}
+.team-description {
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--second-text-color);
+}
+/* ==PORTFOLIO== */
+
+.filter-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: #f5f4fa;
+  cursor: pointer;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--accent-color);
+}
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-text-color);
+}
+.project-specimen {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--second-text-color);
+}
+/* ==FOOTER== */
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .address-link {
-  font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
+  line-height: 1.71;
   color: #ffffff;
 }
 .address-mail-link,
 .address-phone-link {
-  font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: #ffffff99;
 }
 .address-link:hover,
@@ -104,14 +163,14 @@ body {
 
 .address-mail-link:hover,
 .address-mail-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .address-phone-link:hover,
 .address-phone-link:focus {
   color: var(--accent-color);
 }
 .accent-black {
-  color: #212121;
+  color: var(--main-text-color);
 }
 .accent-white {
   color: #ffffff;
